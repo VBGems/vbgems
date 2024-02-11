@@ -29,14 +29,14 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">VB Gems</a>
+						<a href="index.php" class="logo">VB Gems</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">Products</a></li>
-							<li><a href="aboutus.html">About Us</a></li>
+							<li class="active"><a href="index.php">Products</a></li>
+							<li><a href="aboutus.php">About Us</a></li>
 							<li><a href="contactus.php">Contact Us</a></li>
 						</ul>
 						<ul class="icons">
