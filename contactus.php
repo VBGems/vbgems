@@ -14,6 +14,25 @@
 	</head>
 	<body class="is-preload">
 
+	<?php
+	if(!empty($_POST["send"])) {
+		$userEmail = $_POST["email"];
+		$userFirstName = $_POST["firstname"];
+		$userLastName = $_POST["lastname"];
+		$userMessage = $_POST["message"];
+		$toEmail = "vbgems0@yahoo.com";
+
+		$mailHeaders = "Name: " . $userFirstName . " " . $userLastName . "\r\n Message: " . $userMessage . "\r\n";
+
+
+		if(mail($toEmail, $userEmail, $mailHeaders)) {
+			$message = "We have received your request Successfully !";
+		} else {
+			$message = "Not able to send mail succesfully!";
+		}
+	}
+	?>
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -60,34 +79,40 @@
 									<div class="col-6 col-12-small">
 
 
-									<form method="post" action="#">
+									<form method="post" action="">
 										<div class="row gtr-uniform">
+										<?php if($message == "") { ?>
 											<div class="col-6 col-12-xsmall">
-												<input type="text" name="demo-firstname" id="demo-firstname" value="" placeholder="First Name" />
+												<input type="text" name="firstname" id="firstname" value="" placeholder="First Name" />
 											</div>
 											<div class="col-6 col-12-xsmall">
-												<input type="text" name="demo-lastname" id="demo-lastname" value="" placeholder="Last Name" />
+												<input type="text" name="lastname" id="lastname" value="" placeholder="Last Name" />
 											</div>
 											<div class="col-12">
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="email" required="" />
+												<input type="email" name="email" id="email" value="" placeholder="email" required="" />
 											</div>
 											<div class="col-6 col-12-xsmall">
-												<input type="text" name="demo-companyname" id="demo-companyname" value="" placeholder="Company Name" />
+												<input type="text" name="companyname" id="companyname" value="" placeholder="Company Name" />
 											</div>
 											<div class="col-6 col-12-xsmall">
-												<input type="tel" name="demo-mobile" id="demo-mobile" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" value="" placeholder="Mobile" />
+												<input type="tel" name="mobile" id="mobile" pattern="\(?\+\(?49\)?[ ()]?([- ()]?\d[- ()]?){10}" value="" placeholder="Mobile" />
 											</div>
 											<!-- Break -->
 											<div class="col-12">
-												<textarea name="demo-message" style="height: 350px" id="demo-message" placeholder="Enter your message" rows="6" ></textarea>
+												<textarea name="message" style="height: 350px" id="message" placeholder="Enter your message" rows="6" ></textarea>
 											</div>
 											<!-- Break -->
 											<div class="col-12">
 												<ul class="actions">
-													<li><input type="submit" value="Send Message" class="primary" /></li>
+													<li><input type="submit" name="send" value="Send Message" class="primary" /></li>
 													<li><input type="reset" value="Reset" /></li>
 												</ul>
 											</div>
+											<?php } else { ?>
+											<div>
+											<strong class="success"><?php echo $message; ?> </strong>
+											</div>
+											<?php } ?>
 										</div>
 									</form>
 										</div>
