@@ -46,13 +46,13 @@
 						<ul class="links">
 							<li><a href="index.html">Products</a></li>
 							<li><a href="aboutus.html">About Us</a></li>
-							<li class="active"><a href="contactus.html">Contact Us</a></li>
+							<li class="active"><a href="contactus.php">Contact Us</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="https://pin.it/6aWFpM1a3" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+							<li><a href="https://www.instagram.com/vb_gems?igsh=MXd5NHRqa2VkOGU1bQ%3D%3D&utm_source=qr" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
 							<li><a href="https://www.facebook.com/profile.php?id=61555500694440&notif_id=1705093248919540&notif_t=follower_invite_accept&ref=notif" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/vb_gems?igsh=MXd5NHRqa2VkOGU1bQ%3D%3D&utm_source=qr" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://pin.it/6aWFpM1a3" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
 						</ul>
 					</nav>
 
@@ -139,10 +139,10 @@
 												<section >
 													<h3>Social</h3>
 													<ul class="icons alt">
-														<li><a href="https://pin.it/6aWFpM1a3" class="icon brands alt fa-pinterest"><span class="label">Pinterest</span></a></li>
+														<li><a href="https://www.instagram.com/vb_gems?igsh=MXd5NHRqa2VkOGU1bQ%3D%3D&utm_source=qr" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 														<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
 														<li><a href="https://www.facebook.com/profile.php?id=61555500694440&notif_id=1705093248919540&notif_t=follower_invite_accept&ref=notif" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-														<li><a href="https://www.instagram.com/vb_gems?igsh=MXd5NHRqa2VkOGU1bQ%3D%3D&utm_source=qr" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+														<li><a href="https://pin.it/6aWFpM1a3" class="icon brands alt fa-pinterest"><span class="label">Pinterest</span></a></li>
 													</ul>
 												</section>
 											</section>
@@ -162,10 +162,10 @@
 					<div id="copyright">
 					<ul><li>&copy; VB Gems 2024</li>
 						<ul class="icons">
-							<li><a href="https://pin.it/6aWFpM1a3" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+							<li><a href="https://www.instagram.com/vb_gems?igsh=MXd5NHRqa2VkOGU1bQ%3D%3D&utm_source=qr" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
 							<li><a href="https://www.facebook.com/profile.php?id=61555500694440&notif_id=1705093248919540&notif_t=follower_invite_accept&ref=notif" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/vb_gems?igsh=MXd5NHRqa2VkOGU1bQ%3D%3D&utm_source=qr" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://pin.it/6aWFpM1a3" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
 						</ul>
 					</div>
 
