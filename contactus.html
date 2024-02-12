@@ -15,24 +15,7 @@
 	</head>
 	<body class="is-preload">
 
-	<?php
-	if(!empty($_POST["send"])) {
-		$userEmail = $_POST["email"];
-		$userFirstName = $_POST["firstname"];
-		$userLastName = $_POST["lastname"];
-		$userMessage = $_POST["message"];
-		$toEmail = "vbgems0@yahoo.com";
-
-		$mailHeaders = "Name: " . $userFirstName . " " . $userLastName . "\r\n Message: " . $userMessage . "\r\n";
-
-
-		if(mail($toEmail, $userEmail, $mailHeaders)) {
-			$message = "We have received your request Successfully !";
-		} else {
-			$message = "Not able to send mail succesfully!";
-		}
-	}
-	?>
+	
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -80,11 +63,12 @@
 									<div class="col-6 col-12-small">
 
 
-									<form method="post" action="">
+									<form id="contactform" method="POST" action="https://formsubmit.io/send/patelniyati22597@gmail.com">
+										<!-- <input name="_redirect" type="hidden" id="name" value="https://vbgems.com"> -->
 										<div class="row gtr-uniform">
-										<?php if($message == "") { ?>
+										
 											<div class="col-6 col-12-xsmall">
-												<input type="text" name="firstname" id="firstname" value="" placeholder="First Name" />
+												<input type="text" name="name" id="name" value="" placeholder="First Name" />
 											</div>
 											<div class="col-6 col-12-xsmall">
 												<input type="text" name="lastname" id="lastname" value="" placeholder="Last Name" />
@@ -100,8 +84,9 @@
 											</div>
 											<!-- Break -->
 											<div class="col-12">
-												<textarea name="message" style="height: 350px" id="message" placeholder="Enter your message" rows="6" ></textarea>
+												<textarea name="comment" style="height: 350px" id="comment" placeholder="Enter your message" rows="6" ></textarea>
 											</div>
+											<input name="_formsubmit_id" type="text" style="display:none">
 											<!-- Break -->
 											<div class="col-12">
 												<ul class="actions">
@@ -109,11 +94,7 @@
 													<li><input type="reset" value="Reset" /></li>
 												</ul>
 											</div>
-											<?php } else { ?>
-											<div>
-											<strong class="success"><?php echo $message; ?> </strong>
-											</div>
-											<?php } ?>
+											
 										</div>
 									</form>
 										</div>
