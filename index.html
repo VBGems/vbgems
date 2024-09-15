@@ -12,6 +12,36 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			  $("#realdiamond").click(function(){
+				$("#cvdposts").hide();
+				$("#rdposts").show();
+				$("#rddesc").show();
+				$("#cvddesc").hide();
+
+				$("#contactus").show();
+
+				$('html,body').animate({
+        		scrollTop: $("#rddesc").offset().top},
+        		'slow');
+
+			  });
+			  $("#cvddiamond").click(function(){
+				$("#rdposts").hide();
+				$("#cvddesc").show();
+				$("#cvdposts").show();
+				$("#rddesc").hide();
+
+				$("#contactus").show();
+
+				$('html,body').animate({
+        		scrollTop: $("#cvddesc").offset().top},
+        		'slow');
+			  });
+			});
+		  </script>
 	</head>
 	<body class="is-preload">
 
@@ -52,22 +82,50 @@
 					<div id="main">
 
 						<!-- Featured Post -->
-							<article class="post featured">
+							<article class=" featured">
 								<header class="major">
+									</br>
 									<span class="date">Crafting Elegance, Since 2014</span>
-									<h2>Solitaires Collection</h2>
+									<h1>Solitaires Collection</h1>
 									<p>Explore our curated collection,</br> 
 									where each piece is a testament to timeless elegance and </br>
 								unparalleled craftsmanship – a fusion of artistry and sophistication.</p>
 								</header>
 								<a href="#collection" class="image main"><img src="images/ds2.png" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="#collection" class="button large">Our Full Collection</a></li>
-								</ul>
-							</article>
+								
+							</br>
+								<header class="major">
+									<span class="date">Explore our diamond collection here</span>
+								</header>
 
-						<!-- Posts -->
-							<section id="collection" class="posts" name="ourcollectin">
+								<ul class="actions special">
+									<button style="margin-right: 30px" id="realdiamond"> Real Diamond Collection </button>
+									<button id="cvddiamond"> Lab Grown Diamond Collection </button>
+								</ul>
+
+							</br>
+
+							<!-- Real Dimaond Description -->
+							<section id="rddesc" style="display:none;"> 
+								<header class="major">
+									<h1>Real Diamonds</h1>
+									<p>Formed deep within the earth over billions of years, pushed to the surface through volcanic eruptions, </br>
+										each natural diamond is entirely unique.</p>
+								</header>
+							</section>
+
+							<!-- Lab Dimaond Description -->
+							<section id="cvddesc" style="display:none;"> 
+								<header class="major">
+									<h1>Lab Grown Diamonds</h1>
+									<p>A great alternative to natural diamonds, lab-growns hold the same level of brilliance as any other real diamond formed.</br>
+										Created in a laboratory, they are a fine option if you are looking to create decorative jewellery pieces.</p>
+								</header>
+							</section>
+						</article>
+						
+							<!-- Real Dimaond Collection -->
+							<section id="rdposts" class="posts" name="ourcollectin" style="display:none;">
 								<article>
 									<header>
 										<h2><a>Round</a></h2>
@@ -121,6 +179,148 @@
 								<article></article>
 									
 							</section>
+
+							<!-- CVD Diamond Collection -->
+								<section id="cvdposts" name="ourcollectin" class="posts" style="display:none;">
+								
+								<article>
+									<header>
+										<h2><a>Oval</a></h2>
+									</header>
+									<a class="image"><img src="images/oval.png" alt=""/></a>
+									<p>The oval cut diamond is  an elongated shape filled with elegance.  It contains a larger surface area compared to its ancestral round cut, which gives the appearance of being larger. It is one of the only alternatives to the classic brilliant round cut that is able to match its sparkle and beauty. </p>
+									<!-- <ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul> -->
+								</article>
+								<article>
+									<header>
+										<h2><a>Pear</a></h2>
+									</header>
+									<a class="image"><img src="images/pear.png" alt="" /></a>
+									<p>The pear cut is a combination between the round brilliant cut and the marquise cut. It and also belongs into the family of brilliant cut diamonds.Pear shape cut diamonds are very elegant and are a good match for a buyer with a taste for uniqueness and personal style that favors the uncommon.</p>
+									<!-- <ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul> -->
+								</article>
+								<article>
+									<header>
+										<h2><a>Princess</a></h2>
+									</header>
+									<a class="image"><img src="images/princess.png" alt=""/></a>
+									<p>Princess cut diamonds, otherwise known as square modified brilliants, are reckoned to be the most popular diamond shape following the round brilliant. It was first created in the 1960s and its creation is attributed to a London jeweler.</p>
+									<!-- <ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul> -->
+								</article>
+								<article>
+									<header>
+										<h2><a>Emerald</a></h2>
+									</header>
+									<a class="image"><img src="images/emerald.png" alt="" /></a>
+									<p>The Emerald Cut, also known as the octagon cut, due to its octagonal outline, is the most popular of the fancy shapes family. When we set Emerald cut stones in a layout,their larger ratio provides the effect of looking bigger. </p>
+									<!-- <ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul> -->
+								</article>
+								<article>
+									<header>
+										<h2><a>Marquise</a></h2>
+									</header>
+									<a class="image"><img src="images/marquise.png" alt="" /></a>
+									<p>The Marquise Cut remains very popular to this day is due to its unrivaled feminine quality, and flattering asthetics.  The Marquise appears before than it actually is due to its elongated shape, and its shape offers a slimming effect when worn as a ring.</p>
+									<!-- <ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul> -->
+								</article>
+								<article>
+									<header>
+										<h2><a>Heart</a></h2>
+									</header>
+									<a class="image"><img src="images/heart.png" alt="" /></a>
+									<p>The Heart Shape Cut Diamond is a valentines day favorite that dates back to 1562, when it was presented as a gift to Queen Elizabeth by the Queen of Scots, Mary. Technically speaking, the heart shaped diamond is achieved by taking a Pear Cut Diamond and removing a notch from its top.</p>
+									<!-- <ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul> -->
+								</article>
+								<article>
+									<header>
+										<h2><a>Tapered Bageutte</a></h2>
+									</header>
+									<a class="image"><img src="images/Tbaguette.jpg" alt="" /></a>
+									<p>A tapered baguette, also known as "Taper", is a relatively small, elongated diamond where the two long sides taper inward to form a long trapezoidal shape. It is the most common side stones used in engagement rings.</p>
+									<!-- <ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul> -->
+								</article>
+								<article>
+									<header>
+										<h2><a>Straight Bageutte</a></h2>
+									</header>
+									<a class="image"><img src="images/baguette.png" alt="" /></a>
+									<p>The Bageutte cut is a rectangular shape that embodies the Art Deco era. The word “baguette” is a French word for a long, narrow loaf of bread. It features long, symmetrical Step cut facets that draw in light and spotlight the diamond’s clarity.</p>
+									<!-- <ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul> -->
+								</article>
+								<article>
+									<header>
+										<h2><a>Cadillac</a></h2>
+									</header>
+									<a class="image"><img src="images/cadillac.png" alt="" /></a>
+									<p>A Cadillac Cut is a diamond with five sides. It's called this way because its outline is reminiscent of the famous Cadillac logo. Cadis are the perfect side stones for center Rounds, Emeralds, Asher cuts and Cushions.</p>
+									<!-- <ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul> -->
+								</article>
+								<article>
+									<header>
+										<h2><a>Radiant</a></h2>
+									</header>
+									<a class="image"><img src="images/radiant.png" alt="" /></a>
+									<p>The radiant cut combines the advantages of high brilliance and the fine elegance of a square or rectangular shape. The radiant cut is one of the best-known mixed cuts and has grown in popularity in recent years. A radiant cut is a good choice for a buyer who wants a rectangular diamond shape, but prefers more brilliance than for instance an emerald cut can provide.</p>
+									<!-- <ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul> -->
+								</article>
+								<article>
+									<header>
+										<h2><a>Trapezoid</a></h2>
+									</header>
+									<a class="image"><img src="images/trapazoid.jpg" alt="" /></a>
+									<p>THe Trapezoid cut, or "Traps" are probably the most popular side stones used in jewelry. The term trapeze is probably derived from the flying trapeze made famous in the circus. Trapezoids work best with elongated or very large stones. </p>
+									<!-- <ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul> -->
+								</article>
+								<article>
+									<header>
+										<h2><a>Trillion</a></h2>
+									</header>
+									<a class="image"><img src="images/trilliant.jpeg" alt="" /></a>
+									<p>The Trilliant Cut, also known as the Trillion or Triangle Cut  is a three equally sided diamond cut which forms the shape of a triangle. The Trilliant is primarily used as a side stone, however, it has such tremendous fire and brilliance that is can also be used  as a center piece Solitaire. </p>
+									<!-- <ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul> -->
+								</article>
+							</section>
+
+							<!-- To place order CONTACT US -->
+							<article id="contactus" class=" featured" style="display:none;">
+								<header class="major">
+									<!-- <span class="date">Get in touch to place your order</span> -->
+									<h2>Get in touch to place your order</h2>
+									<p>Ready to find the perfect diamond? Our team is here to help you make the right choice, whether you're interested in a timeless natural diamond or an innovative lab-grown option. We offer personalized service to guide you through our stunning collections, ensuring you find exactly what you're looking for. Reach out to us today to place your order and experience unparalleled quality, exceptional value, and expert support every step of the way!</p>
+								</header>
+
+								<ul class="actions special">
+									<form action="contactus.html">
+									<button class="primary"> Contact Us </button>
+									</form>
+								</ul>
+							</article>
+						<!-- </section> -->
+						
 
 						<!-- Footer -->
 							<!--<footer>
